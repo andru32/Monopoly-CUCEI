@@ -1,22 +1,24 @@
 #ifndef PROPIEDAD_H
 #define PROPIEDAD_H
 
-#include <string>
+#include <QString>
+
 using namespace std;
 
 class Propiedad{
 private:
     int codigo;
-    string nombre;
+    QString nombre;
     int precio;
     int alquiler;
     int duenio;
+    QString pathImagen;
 public:
-    Propiedad(int, string,int,int,int);
+    Propiedad(int, QString,int,int,int);
     ~Propiedad();
     void setCodigo(int);
     int getCodigo();
-    void setNombre(string);
+    void setNombre(QString);
     string getNombre();
     void setPrecio(int);
     int getPrecio();
